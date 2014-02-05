@@ -8,8 +8,8 @@ g = geocoders.GoogleV3()
 
 conn = sqlite3.connect('schools.db')
 
-#conn.execute('DROP TABLE IF EXISTS geocodes;')
-#conn.execute('CREATE TABLE geocodes (house_id NUMERIC, lat REAL, lon REAL);')
+conn.execute('DROP TABLE IF EXISTS geocodes;')
+conn.execute('CREATE TABLE geocodes (house_id NUMERIC, lat REAL, lon REAL);')
 
 cursor = conn.execute('''SELECT house_number, dir, street_name, zipcode, id 
 	FROM houses 

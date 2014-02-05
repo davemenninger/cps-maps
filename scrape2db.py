@@ -33,16 +33,7 @@ for tr in rows:
   	elementary = cols[7].get_text()
   	middle = cols[8].get_text()
 
-	c.execute('''INSERT INTO scrapes 
-		VALUES (\'" + direction +  "\' , 
-			\'"  + street_name +  "\' , 
-			\'"  + side +  "\' , 
-			\'"  + address_range +  "\' , 
-			\'"  +  area +  "\' , 
-			\'"  + zipcode +  "\' , 
-			\'"  + grades +  "\' , 
-			\'"  + elementary +  "\' , 
-			\'"  + middle + "\') ''')
+	c.execute("INSERT INTO scrapes VALUES (\'" + direction +  "\' , \'"  + street_name +  "\' , \'"  + side +  "\' , \'"  + address_range +  "\' , \'"  +  area +  "\' , \'"  + zipcode +  "\' , \'"  + grades +  "\' , \'"  + elementary +  "\' , \'"  + middle + "\') ")
 
 conn.commit()
 
