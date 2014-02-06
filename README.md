@@ -17,3 +17,10 @@ Basically it goes like this:
 # Requirements
 
 sqlite3, BeautifulSoup, geopy
+
+# TODO
+
+* scrape these pages: 
+    * http://www.cps-k12.org/schools-print/school-list/elementary
+    * http://www.cps-k12.org/schools-print/school-list/secondary
+* turn the school.py script into a chrome extension?
